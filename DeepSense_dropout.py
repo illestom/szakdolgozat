@@ -22,7 +22,7 @@ np.random.seed(123123)
 
 INTER_DIM = 8 #GRU dimenzió
 TAU = 40 #időszelet, adatok száma
-PERSONS = ('I_6', 'I_6') #fájlnevek, csv-k, kiterjesztés nélkül
+PERSONS = ('A', 'B') #fájlnevek, csv-k, kiterjesztés nélkül
 SENSORS = (707, 1001)#(384, 1040, 416, 272) #szenzornevek
 EPOCH_CNT = 30 #epoch szám
 PERCENT= 0.8 #train size/test size
