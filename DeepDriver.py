@@ -29,7 +29,7 @@ STRIDE_MERGE_LEN3 = 1
 MAX2_SIZE = 4
 
 drivers = []
-datas='./Folder' #mappa, ahol a bemeneti fájlko találhatóak
+datas='./Folder' #mappa, ahol a bemeneti fájlok találhatóak
 for root, dirs, files in os.walk(datas):
     for filename in files:
         drivers.append(os.path.join(root, filename))
@@ -71,8 +71,6 @@ def prepare(file=None, slice=TAU, category=1, classes=len(PERSONS)):
         datas = []
         for i in range(len(SENSORS)):
             datas.append([])
-        # data = []
-        # data2 = []
         for rows in reader:
             ertek = float(rows[2])
             kulcs = int(rows[1])
